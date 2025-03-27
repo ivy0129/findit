@@ -42,6 +42,21 @@ body {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
+}
+
 .logo h1 {
     font-size: 24px;
     color: var(--primary-color);
@@ -165,6 +180,7 @@ body {
     transform: none;
 }
 
+/* 游戏预览区域样式 */
 .game-preview {
     position: relative;
     width: 478px;
@@ -183,6 +199,21 @@ body {
     object-fit: cover;
 }
 
+/* 隐藏游戏控制栏 */
+.game-preview::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* 控制栏高度 */
+    background-color: #1f143e;
+    z-index: 10;
+    pointer-events: none; /* 允许点击穿透 */
+    display: none; /* 默认隐藏，如果hideBar参数无效则启用 */
+}
+
+/* 游戏信息区域 */
 .game-info {
     padding: 1.5rem;
     display: flex;
@@ -342,4 +373,81 @@ body {
 
 .game-card {
     animation: fadeIn 0.5s ease-out;
+}
+
+/* 标签导航样式 */
+.tab-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    overflow-x: auto;
+}
+
+.tab-btn {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.tab-btn::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #007bff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.tab-btn:hover {
+    color: #007bff;
+}
+
+.tab-btn.active {
+    color: #007bff;
+}
+
+.tab-btn.active::after {
+    transform: scaleX(1);
+}
+
+/* 标签内容区域 */
+.tab-content {
+    position: relative;
+}
+
+.tab-pane {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tab-pane.active {
+    display: block;
+    opacity: 1;
+}
+
+/* 移动端支持 */
+@media (max-width: 768px) {
+    .tab-nav {
+        justify-content: flex-start;
+        padding: 0 15px 10px;
+    }
+    
+    .tab-btn {
+        font-size: 18px;
+        padding: 8px 15px;
+        white-space: nowrap;
+    }
 } 

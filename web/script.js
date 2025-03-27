@@ -1,3 +1,30 @@
+// 标签切换功能
+function initTabSwitcher() {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // 移除所有标签的active类
+            tabBtns.forEach(b => b.classList.remove('active'));
+            // 为当前标签添加active类
+            btn.classList.add('active');
+            
+            // 获取对应的内容面板
+            const tabId = btn.getAttribute('data-tab');
+            const tabPane = document.getElementById(`${tabId}-tab`);
+            
+            // 隐藏所有内容面板
+            const allPanes = document.querySelectorAll('.tab-pane');
+            allPanes.forEach(pane => pane.classList.remove('active'));
+            
+            // 显示当前内容面板
+            if (tabPane) {
+                tabPane.classList.add('active');
+            }
+        });
+    });
+}
+
 // 语言切换功能
 document.addEventListener('DOMContentLoaded', () => {
     const langToggle = document.getElementById('langToggle');
@@ -120,4 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // 页面加载完成后初始化
+    initTabSwitcher();
 }); 

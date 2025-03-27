@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play 2048 - a simple yet addictive puzzle game where you combine numbers to reach the elusive 2048 tile. Test your strategy and planning skills!">
+    <meta name="keywords" content="2048, puzzle game, number game, strategy game, online game, free game">
+    <meta name="description" lang="zh" content="玩2048 - 一款简单却令人上瘾的益智游戏，你需要合并数字以达到2048方块。测试你的策略和规划能力！">
+    <meta name="keywords" lang="zh" content="2048, 益智游戏, 数字游戏, 策略游戏, 在线游戏, 免费游戏">
+    <link rel="alternate" hreflang="en" href="game-detail-fishing.html" />
+    <link rel="alternate" hreflang="zh" href="game-detail-fishing.html?lang=zh" />
+    <title data-lang-en="2048 - Addictive Number Puzzle Game" data-lang-zh="2048 - 数字益智游戏">2048 - Addictive Number Puzzle Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="game-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "2048",
+        "alternateName": "2048",
+        "description": "A simple yet addictive puzzle game where you combine numbers to reach the elusive 2048 tile.",
+        "description": {
+            "@language": "zh",
+            "@value": "一款简单却令人上瘾的益智游戏，你需要合并数字以达到2048方块"
+        },
+        "genre": ["Puzzle", "Strategy", "Casual"],
+        "platformRequirements": [{
+            "@type": "WebApplication",
+            "operatingSystem": "Web Browser"
+        }],
+        "gamePlatform": "Web Browser",
+        "applicationCategory": "Game",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "2345",
+            "bestRating": "5",
+            "worstRating": "1"
+        }
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.svg" alt="Find it Logo" class="logo-image">
+                </a>
+            </div>
+            <button id="langToggle" class="lang-toggle">
+                <span>中文</span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="game-detail-content" itemscope itemtype="https://schema.org/VideoGame">
+        <div class="game-header">
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                <span data-lang-en="Back to Games" data-lang-zh="返回游戏列表">Back to Games</span>
+            </a>
+            <h1 itemprop="name" data-lang-en="2048" data-lang-zh="2048">2048</h1>
+        </div>
+
+        <div class="game-info-bar">
+            <div class="game-description">
+                <p itemprop="description" data-lang-en="2048 is an addictive number puzzle game that tests your strategic thinking. Slide numbered tiles on a grid to combine matching numbers and create a tile with the number 2048. With simple rules but challenging gameplay, this game offers endless entertainment while exercising your brain. Are you up for the challenge of reaching 2048 or beyond?" data-lang-zh="2048是一款令人上瘾的数字益智游戏，测试你的战略思维。在网格上滑动带数字的方块，合并相同的数字，创建一个数字为2048的方块。游戏规则简单但玩法具挑战性，为你提供无尽的娱乐，同时锻炼你的大脑。你准备好迎接达到2048甚至更高的挑战了吗？">2048 is an addictive number puzzle game that tests your strategic thinking. Slide numbered tiles on a grid to combine matching numbers and create a tile with the number 2048. With simple rules but challenging gameplay, this game offers endless entertainment while exercising your brain. Are you up for the challenge of reaching 2048 or beyond?</p>
+            </div>
+            <div class="game-rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                <div class="rating-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="rating-info">
+                    <span class="average-score" itemprop="ratingValue">4.8</span>
+                    <span data-lang-en="(2,345 ratings)" data-lang-zh="(2,345 评分)" itemprop="reviewCount">(2,345 ratings)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-content">
+            <div class="game-container">
+                <iframe src="https://www.crazygames.com/embed/2048" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+            </div>
+            <div class="game-sidebar">
+                <section class="game-instructions">
+                    <h2 data-lang-en="How to Play" data-lang-zh="游戏方法">How to Play</h2>
+                    <ol>
+                        <li data-lang-en="Use arrow keys or swipe to move all tiles in one direction" data-lang-zh="使用方向键或滑动来将所有方块朝一个方向移动">Use arrow keys or swipe to move all tiles in one direction</li>
+                        <li data-lang-en="When two tiles with the same number touch, they merge into one tile with double the value" data-lang-zh="当两个带有相同数字的方块相碰时，它们会合并成一个数值翻倍的方块">When two tiles with the same number touch, they merge into one tile with double the value</li>
+                        <li data-lang-en="After each move, a new tile appears (either 2 or 4)" data-lang-zh="每次移动后，会出现一个新的方块（数值为2或4）">After each move, a new tile appears (either 2 or 4)</li>
+                        <li data-lang-en="Plan your moves carefully to create space for new tiles" data-lang-zh="仔细规划你的移动，为新方块创造空间">Plan your moves carefully to create space for new tiles</li>
+                        <li data-lang-en="The game ends when the board is full and no more moves are possible" data-lang-zh="当棋盘已满且无法再移动时，游戏结束">The game ends when the board is full and no more moves are possible</li>
+                    </ol>
+                </section>
+
+                <section class="game-tips">
+                    <h2 data-lang-en="Pro Tips" data-lang-zh="专业提示">Pro Tips</h2>
+                    <ul>
+                        <li data-lang-en="Focus on keeping your highest number tile in one corner" data-lang-zh="专注于将你最大数值的方块保持在一个角落">Focus on keeping your highest number tile in one corner</li>
+                        <li data-lang-en="Create a chain of decreasing numbers from your highest tile" data-lang-zh="从你最大的方块开始创建一个递减的数字链">Create a chain of decreasing numbers from your highest tile</li>
+                        <li data-lang-en="Avoid moving tiles in the direction of your highest value corner if possible" data-lang-zh="尽可能避免向你最高值方块所在的角落方向移动方块">Avoid moving tiles in the direction of your highest value corner if possible</li>
+                        <li data-lang-en="Think several moves ahead - like in chess" data-lang-zh="像下棋一样思考几步之后的局面">Think several moves ahead - like in chess</li>
+                        <li data-lang-en="When the board gets crowded, prioritize clearing space over merging small values" data-lang-zh="当棋盘变得拥挤时，优先考虑清理空间，而不是合并小数值">When the board gets crowded, prioritize clearing space over merging small values</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p data-lang-en="© 2024 GameHub. All rights reserved." data-lang-zh="© 2024 游戏中心。保留所有权利。">© 2024 GameHub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
