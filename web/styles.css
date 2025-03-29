@@ -42,19 +42,28 @@ body {
     align-items: center;
 }
 
-.logo {
+.logo-container {
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: inherit;
 }
 
 .logo-image {
     height: 40px;
     width: auto;
-    transition: transform 0.3s ease;
+    margin-right: 10px;
 }
 
-.logo-image:hover {
-    transform: scale(1.05);
+.site-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.site-name:hover {
+    color: #007bff;
 }
 
 .logo h1 {
@@ -318,6 +327,14 @@ body {
     .hero-section .hero-description {
         font-size: 1rem;
         padding: 0 15px;
+    }
+
+    .site-name {
+        font-size: 20px;
+    }
+    
+    .logo-image {
+        height: 32px;
     }
 }
 
