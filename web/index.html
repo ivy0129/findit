@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Relive your childhood memories with classic online games">
-    <meta name="keywords" content="childhood games, classic games, retro games, online games">
-    <meta name="description" lang="zh" content="重温童年美好回忆，体验经典在线游戏">
-    <meta name="keywords" lang="zh" content="童年游戏, 经典游戏, 怀旧游戏, 在线游戏">
+    <meta name="description" content="Find it a fun - Your go-to platform for classic hidden object games. Play engaging puzzle games and test your observation skills with our carefully curated collection.">
+    <meta name="keywords" content="find it a fun, hidden object games, puzzle games, observation games">
+    <meta name="description" lang="zh" content="Find it a fun - 您寻找经典隐藏物品游戏的理想平台。玩引人入胜的解谜游戏，测试观察能力，享受我们精心策划的游戏集合。">
+    <meta name="keywords" lang="zh" content="find it a fun, 寻物游戏, 解谜游戏, 观察游戏">
     <link rel="alternate" hreflang="en" href="index.html" />
     <link rel="alternate" hreflang="zh" href="index.html?lang=zh" />
     <title data-lang-en="Childhood Games Collection" data-lang-zh="童年游戏集合">Childhood Games Collection</title>
@@ -29,8 +29,9 @@
     <header class="header">
         <nav class="nav-container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="logo.svg" alt="Find it Logo" class="logo-image">
+                <a href="index.html" class="logo-container">
+                    <img src="logo.svg" alt="Find it a fun - Childhood Games Collection Logo" class="logo-image" data-alt-en="Find it a fun - Childhood Games Collection Logo" data-alt-zh="Find it a fun - 童年游戏集合 Logo">
+                    <span class="site-name" data-lang-en="Find it a fun" data-lang-zh="找到快乐">Find it a fun</span>
                 </a>
             </div>
             <button id="langToggle" class="lang-toggle">
@@ -41,7 +42,7 @@
 
     <main class="main-content">
         <section class="hero-section">
-            <h2 data-lang-en="Welcome to Childhood Games" data-lang-zh="欢迎来到童年游戏">Welcome to Childhood Games</h2>
+            <h1 data-lang-en="Find it a fun - Your Ultimate Gaming Destination" data-lang-zh="Find it a fun - 您的终极游戏目的地">Find it a fun - Your Ultimate Gaming Destination</h1>
             <p class="tagline" data-lang-en="Find it a fun" data-lang-zh="找到快乐">Find it a fun</p>
             <p class="hero-description" data-lang-en="Experience the nostalgia of your favorite childhood games, now available online. From classic puzzles to timeless adventures, each game brings back precious memories while offering modern gameplay." data-lang-zh="在线体验您最喜爱的童年游戏，找回昔日的美好回忆。从经典解谜到永恒冒险，每款游戏都承载着珍贵的记忆，同时带来现代化的游戏体验。">Experience the nostalgia of your favorite childhood games, now available online. From classic puzzles to timeless adventures, each game brings back precious memories while offering modern gameplay.</p>
         </section>
@@ -57,9 +58,56 @@
             <div class="tab-content">
                 <!-- Popular Games 内容 -->
                 <div class="tab-pane active" id="popular-tab">
+                    <h2 data-lang-en="Popular Games" data-lang-zh="热门游戏">Popular Games</h2>
                     <div class="game-grid popular-games">
+                        <!-- 8 Ball Billiards 游戏卡片 -->
+                        <a href="game-detail-8ball.html" class="game-card-link" title="Play 8 Ball Billiards Classic - Pool Game">
+                            <article class="game-card" itemscope itemtype="https://schema.org/Game" data-rating="5.0" data-rating-count="2567">
+                                <div class="game-preview">
+                                    <iframe src="https://www.crazygames.com/embed/8-ball-billiards-classic" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+                                </div>
+                                <div class="game-info">
+                                    <h3 data-lang-en="8 Ball Billiards Classic" data-lang-zh="8球台球经典版">8 Ball Billiards Classic</h3>
+                                    <p class="game-description" data-lang-en="Master the art of pool in this realistic billiards game" data-lang-zh="在这款真实的台球游戏中掌握台球技巧">Master the art of pool in this realistic billiards game</p>
+                                    <div class="rating" aria-label="Game rating">
+                                        <div class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="rating-count">(2,567)</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+
+                        <!-- Foosball 3D 游戏卡片 -->
+                        <a href="game-detail-foosball.html" class="game-card-link" title="Play Foosball 3D - Table Football Game">
+                            <article class="game-card" itemscope itemtype="https://schema.org/Game" data-rating="4.5" data-rating-count="1876">
+                                <div class="game-preview">
+                                    <iframe src="https://www.crazygames.com/embed/foosball-3d" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+                                </div>
+                                <div class="game-info">
+                                    <h3 data-lang-en="Foosball 3D" data-lang-zh="3D桌上足球">Foosball 3D</h3>
+                                    <p class="game-description" data-lang-en="Experience the excitement of table football in this realistic 3D game" data-lang-zh="在这款真实的3D游戏中体验桌上足球的乐趣">Experience the excitement of table football in this realistic 3D game</p>
+                                    <div class="rating" aria-label="Game rating">
+                                        <div class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <span class="rating-count">(1,876)</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+
                         <!-- Find It 游戏卡片 -->
-                        <a href="game-detail-find-it.html" class="game-card-link">
+                        <a href="game-detail-find-it.html" class="game-card-link" title="Play Find It - Hidden Object Puzzle Game">
                             <article class="game-card" itemscope itemtype="https://schema.org/Game" data-rating="4.8" data-rating-count="2156">
                                 <div class="game-preview">
                                     <iframe src="https://cloud.onlinegames.io/games/2025/unity/find-it/index-og.html" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
@@ -82,7 +130,7 @@
                         </a>
 
                         <!-- 游戏卡片 2048 -->
-                        <a href="game-detail-fishing.html" class="game-card-link">
+                        <a href="game-detail-2048.html" class="game-card-link" title="Play 2048 - Number Puzzle Game">
                             <article class="game-card" itemscope itemtype="https://schema.org/Game" data-rating="4.8" data-rating-count="2345">
                                 <div class="game-preview">
                                     <iframe src="https://www.crazygames.com/embed/2048?hideBar=true" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
@@ -104,8 +152,8 @@
                             </article>
                         </a>
 
-                        <!-- 游戏卡片 1 -->
-                        <a href="game-detail.html?game=blockbuster-puzzle" class="game-card-link">
+                        <!-- Blockbuster Puzzle 游戏卡片 -->
+                        <a href="game-detail-blockbuster.html" class="game-card-link" title="Play Blockbuster Puzzle - Match Three Game">
                             <article class="game-card" itemscope itemtype="https://schema.org/Game" data-rating="4.5" data-rating-count="1234">
                                 <div class="game-preview">
                                     <iframe src="https://www.crazygames.com/embed/blockbuster-puzzle?hideBar=true" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
@@ -121,14 +169,14 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star-half-alt"></i>
                                         </div>
-                                        <span class="rating-count" data-lang-en="(1,234)" data-lang-zh="(1,234)">(1,234)</span>
+                                        <span class="rating-count">(1,234)</span>
                                     </div>
                                 </div>
                             </article>
                         </a>
 
-                        <!-- 游戏卡片 2 -->
-                        <a href="game-detail-baby-chicco.html" class="game-card-link">
+                        <!-- Baby Chicco Adventures 游戏卡片 -->
+                        <a href="game-detail-baby-chicco.html" class="game-card-link" title="Play Baby Chicco Adventures - Platform Adventure Game">
                             <article class="game-card" itemscope itemtype="https://schema.org/Game" data-rating="4.3" data-rating-count="856">
                                 <div class="game-preview">
                                     <iframe src="https://www.crazygames.com/embed/baby-chicco-adventures?hideBar=true" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
@@ -150,8 +198,8 @@
                             </article>
                         </a>
 
-                        <!-- 游戏卡片 3 -->
-                        <a href="game-detail-merge-master.html" class="game-card-link">
+                        <!-- Merge Master Tanks 游戏卡片 -->
+                        <a href="game-detail-merge-master.html" class="game-card-link" title="Play Merge Master Tanks - Tank Battle Game">
                             <article class="game-card" itemscope itemtype="https://schema.org/Game" data-rating="4.6" data-rating-count="1567">
                                 <div class="game-preview">
                                     <iframe src="https://www.crazygames.com/embed/merge-master-tanks-tank-wars?hideBar=true" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
@@ -173,8 +221,8 @@
                             </article>
                         </a>
 
-                        <!-- 游戏卡片 4 -->
-                        <a href="game-detail-team-order.html" class="game-card-link">
+                        <!-- Team Order Racing 游戏卡片 -->
+                        <a href="game-detail-team-order.html" class="game-card-link" title="Play Team Order Racing - Racing Management Game">
                             <article class="game-card" itemscope itemtype="https://schema.org/Game" data-rating="4.4" data-rating-count="923">
                                 <div class="game-preview">
                                     <iframe src="https://www.crazygames.com/embed/team-order-racing-manager?hideBar=true" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
@@ -196,8 +244,8 @@
                             </article>
                         </a>
 
-                        <!-- 游戏卡片 5 -->
-                        <a href="game-detail-xtreme-drift.html" class="game-card-link">
+                        <!-- Xtreme Drift Racing 游戏卡片 -->
+                        <a href="game-detail-xtreme-drift.html" class="game-card-link" title="Play Xtreme Drift Racing - Drifting Racing Game">
                             <article class="game-card" itemscope itemtype="https://schema.org/Game" data-rating="4.7" data-rating-count="2103">
                                 <div class="game-preview">
                                     <iframe src="https://www.crazygames.com/embed/xtreme-drift-racing?hideBar=true" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
@@ -219,8 +267,8 @@
                             </article>
                         </a>
 
-                        <!-- 游戏卡片 6 -->
-                        <a href="game-detail-robox.html" class="game-card-link">
+                        <!-- Robox 游戏卡片 -->
+                        <a href="game-detail-robox.html" class="game-card-link" title="Play Robox - Robot Adventure Game">
                             <article class="game-card" itemscope itemtype="https://schema.org/Game" data-rating="4.5" data-rating-count="1432">
                                 <div class="game-preview">
                                     <iframe src="https://www.crazygames.com/embed/robox?hideBar=true" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
@@ -247,7 +295,53 @@
                 <!-- New Releases 内容 -->
                 <div class="tab-pane" id="new-tab">
                     <div class="game-grid new-releases">
-                        <!-- 游戏卡片 1 -->
+                        <!-- 8 Ball Billiards 游戏卡片 -->
+                        <a href="game-detail-8ball.html" class="game-card-link" title="Play 8 Ball Billiards Classic - Pool Game">
+                            <article class="game-card" itemscope itemtype="https://schema.org/Game" data-rating="5.0" data-rating-count="2567">
+                                <div class="game-preview">
+                                    <iframe src="https://www.crazygames.com/embed/8-ball-billiards-classic" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+                                </div>
+                                <div class="game-info">
+                                    <h3 data-lang-en="8 Ball Billiards Classic" data-lang-zh="8球台球经典版">8 Ball Billiards Classic</h3>
+                                    <p class="game-description" data-lang-en="Master the art of pool in this realistic billiards game" data-lang-zh="在这款真实的台球游戏中掌握台球技巧">Master the art of pool in this realistic billiards game</p>
+                                    <div class="rating" aria-label="Game rating">
+                                        <div class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="rating-count">(2,567)</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+
+                        <!-- Foosball 3D 游戏卡片 -->
+                        <a href="game-detail-foosball.html" class="game-card-link" title="Play Foosball 3D - Table Football Game">
+                            <article class="game-card" itemscope itemtype="https://schema.org/Game" data-rating="4.5" data-rating-count="1876">
+                                <div class="game-preview">
+                                    <iframe src="https://www.crazygames.com/embed/foosball-3d" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+                                </div>
+                                <div class="game-info">
+                                    <h3 data-lang-en="Foosball 3D" data-lang-zh="3D桌上足球">Foosball 3D</h3>
+                                    <p class="game-description" data-lang-en="Experience the excitement of table football in this realistic 3D game" data-lang-zh="在这款真实的3D游戏中体验桌上足球的乐趣">Experience the excitement of table football in this realistic 3D game</p>
+                                    <div class="rating" aria-label="Game rating">
+                                        <div class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <span class="rating-count">(1,876)</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+
+                        <!-- Blockbuster Puzzle 游戏卡片 -->
                         <a href="game-detail.html?game=blockbuster-puzzle" class="game-card-link">
                             <article class="game-card" itemscope itemtype="https://schema.org/Game" data-rating="4.5" data-rating-count="1234">
                                 <div class="game-preview">
@@ -382,7 +476,7 @@
                                         <span class="rating-count">(2,345)</span>
                                     </div>
                                 </div>
-                            </article>
+                </article>
                         </a>
                     </div>
                 </div>
